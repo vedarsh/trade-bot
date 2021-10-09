@@ -1,13 +1,5 @@
-#ml functions
-import math
-import numpy
-import plotly
-import asyncio
-
 #api functions
 import yfinance as yf
-from time import sleep
-import plotly.graph_objects as go
 
 class TradeInit:
     def __init__(self, ticker , eval_time = None):
