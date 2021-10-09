@@ -20,8 +20,12 @@ class TradeInit:
     @property
     def information(self):
         return self.tk.info
+    
+    @property
+    def max_volume(self):
+        return self.tk.history(period = "max")
 
 
 if __name__ == "__main__":
-    trd = TradeInit("TSLA")
-    print(trd.information)
+    tick = TradeInit("TSLA")
+    print(tick.max_volume)
