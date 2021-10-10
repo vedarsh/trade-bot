@@ -22,6 +22,18 @@ class TradeInit:
         #returns total history for max time period
         return self.tk.history(period = "max")
 
-if __name__ == "__main__":
-    tick = TradeInit("TSLA") #placeholder "TSLA"
-    print(tick.max_volume)   #returns max volume
+    @property
+    def quarterly_earnings(self):
+        #returns quarterly earnings
+        return self.tk.quarterly_earnings
+    
+    @property
+    def sustain(self):
+        #returns sustainability
+        return self.tk.sustainability
+
+def debug(name):
+    tick = TradeInit(name) #placeholder "TSLA"
+    return tick.information
+
+print(debug("tsla"))
