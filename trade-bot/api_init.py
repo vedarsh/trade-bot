@@ -1,5 +1,6 @@
 #api functions
 import yfinance as yf
+from numpy import array
 
 class TradeInit:
     def __init__(self, ticker , eval_time = None):
