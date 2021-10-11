@@ -37,4 +37,3 @@ def debug(name):
     tick = TradeInit(name) #placeholder "TSLA"
     return tick.information
 
-print(debug("tsla"))
