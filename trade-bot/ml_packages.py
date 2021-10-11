@@ -8,10 +8,12 @@ init()
 
 class TableMan:
     def __init__(self, inpt, timep = None):
-        self.inpt = TradeInit(a)
+        self.inpt = TradeInit()
         self.timep = None
         if self.timep is none:
             timep = "1mo"
-    
 
-
+    def inputarr(self):
+        
+        return init()
+        
