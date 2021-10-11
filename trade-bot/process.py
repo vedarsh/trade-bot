@@ -20,7 +20,6 @@ def init():
             y = x[j]
             stock = TradeInit(y)
             print(stock.max_volume)
-            print(stock.information)
     else:
         return "loop_error"
 
