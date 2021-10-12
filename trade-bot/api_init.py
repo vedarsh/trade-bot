@@ -35,5 +35,9 @@ class TradeInit:
 
 def debug(name):
     tick = TradeInit(name) #placeholder "TSLA"
+    print(tick.max_volume)
+    print(tick.quarterly_earnings)
     return tick.information
+
+print(debug("tsla"))
 
