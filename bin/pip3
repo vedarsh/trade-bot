@@ -1,4 +1,4 @@
-#!/home/main/trade-bot/bin/python
+#!/home/main/trade-bot/bin/python3.10
 # -*- coding: utf-8 -*-
 import re
 import sys
