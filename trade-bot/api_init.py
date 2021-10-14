@@ -1,6 +1,22 @@
 #api functions
 import yfinance as yf
 from numpy import array
+import requests
+
+api_url = "https://www.google.com/finance/"
+
+class LiveInfo:
+    def __init__(self, api_url, market_name = None):
+        self.api_url = api_url
+        self.market_name = market_name
+        if market_name is None:
+            market_name = "NYSE"
+        self.request = request.get(api_url)
+
+    @property
+    def fetch_current():
+        return self.r.text
+
 
 class TradeInit:
     def __init__(self, ticker , eval_time = None):
